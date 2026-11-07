@@ -1,41 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Promoção</title>
 
     <style>
+        body {
+            background-color: #ffffff;
+        }
 
-nav ul {
-    display: flex;
-    gap: 100px;
-    list-style: none;
-    padding: 0;
-}
+        nav ul {
+            display: flex;
+            gap: 100px;
+            list-style: none;
+            padding: 0;
+        }
 
-nav a:hover {
-    color: rgb(0, 70, 27);
-    text-decoration: none;
-}
+        nav a:hover {
+            color: rgb(209, 222, 215);
+            text-decoration: none;
+        }
 
+        hr {
+            border: none;
+            border-top: 2px solid rgb(6, 0, 0);
+            width: 100%;
+            margin-top: 20px;
+        }
 
- 
-    
- 
+        nav a {
+            font-size: 26px;
+        }
 
-hr {
-    border: none;
-    border-top: 2px solid rgb(6, 0, 0);
-    width: 100%;
-    margin-top: 20px;
-}
+        
+        table {
+            border-collapse: collapse;   
+        }
 
-nav a {
-    font-size: 26px;
-}
+        th, td {
+            border: 1px solid black;     
+            padding: 8px;                
+        }
 
-</style>
+        th {
+            background-color: #e6e6e6;   
+        }
+    </style>
 
 </head>
 
@@ -56,5 +68,23 @@ nav a {
 
     <hr>
 
+    <h1>Promoções por dia da semana</h1>
+    <p>Muitos mercados têm um dia de oferta. Anote aqui os do seu:</p>
+
+    <table>
+        <tr>
+            <th>Dia</th>
+            <th>O que costuma ter em oferta</th>
+        </tr>
+        <tr><td>Segunda</td><td>Carnes</td></tr>
+        <tr><td>Terça</td><td>Frutas, verduras e legumes</td></tr>
+        <tr><td>Quarta</td><td>Frutas, verduras e legumes</td></tr>
+        <tr><td>Quinta</td><td>Limpeza e higiene</td></tr>
+        <tr><td>Sexta</td><td>Bebidas</td></tr>
+        <tr><td>Sábado</td><td>Padaria e frios</td></tr>
+        <tr><td>Domingo</td><td>Sem promoção fixa</td></tr>
+    </table>
+
 </body>
+
 </html>

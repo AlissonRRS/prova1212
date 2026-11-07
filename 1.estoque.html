@@ -4,14 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Estoque</title>
 
     <style>
         body {
             background-color: #ffffff;
         }
-
-
 
         nav ul {
             display: flex;
@@ -25,11 +23,6 @@
             text-decoration: none;
         }
 
-
-
-
-
-
         hr {
             border: none;
             border-top: 2px solid rgb(6, 0, 0);
@@ -40,9 +33,21 @@
         nav a {
             font-size: 26px;
         }
+
+        
+        table {
+            border-collapse: collapse;   
+        }
+
+        th, td {
+            border: 1px solid black;     
+            padding: 8px;                
+        }
+
+        th {
+            background-color: #e6e6e6;   
+        }
     </style>
-
-
 
 </head>
 
@@ -65,11 +70,84 @@
 
     <h1>Meu Estoque</h1>
 
-    <textarea placeholder="Digite aqui..."></textarea>
+    
+    <table>
+        <tr>
+            <th>Produto</th>
+            <th>Categoria</th>
+            <th>Quantidade</th>
+            <th>Dura mais ou menos</th>
+            <th>Situação</th>
+        </tr>
+        <tr>
+            <td>Arroz</td>
+            <td>Mercearia</td>
+            <td>2 kg</td>
+            <td>20 dias</td>
+            <td>Ok</td>
+        </tr>
+        <tr>
+            <td>Leite</td>
+            <td>Laticínios</td>
+            <td>3 litros</td>
+            <td>4 dias</td>
+            <td>Acabando</td>
+        </tr>
+        <tr>
+            <td>Banana</td>
+            <td>Frutas</td>
+            <td>6 unidades</td>
+            <td>3 dias</td>
+            <td>Acabando</td>
+        </tr>
+        <tr>
+            <td>Sabão em pó</td>
+            <td>Limpeza</td>
+            <td>1 caixa</td>
+            <td>30 dias</td>
+            <td>Ok</td>
+        </tr>
+    </table>
 
+    <h2>Cadastrar produto</h2>
 
+   
+    <form>
+        <label>Nome: <input type="text" placeholder="Ex: Feijão"></label>
+        <br><br>
 
+        <label>Categoria:
+            <select>
+                <option>Mercearia</option>
+                <option>Frutas</option>
+                <option>Legumes e verduras</option>
+                <option>Carnes</option>
+                <option>Laticínios</option>
+                <option>Limpeza</option>
+                <option>Higiene</option>
+            </select>
+        </label>
+        <br><br>
 
+        <label>Quantidade: <input type="number" min="0"></label>
+        <br><br>
+
+        <label>Data da compra: <input type="date"></label>
+        <br><br>
+
+        <label>Duração estimada (dias): <input type="number" min="1"></label>
+        <br><br>
+
+        <label><input type="checkbox"> Item essencial</label>
+        <br><br>
+
+        <label>Observações:<br>
+            <textarea placeholder="Digite aqui..."></textarea>
+        </label>
+        <br><br>
+
+        <button type="submit">Salvar</button>
+    </form>
 
 </body>
 

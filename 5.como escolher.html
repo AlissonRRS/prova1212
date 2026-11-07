@@ -1,41 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Como Escolher</title>
 
     <style>
+        body {
+            background-color: #ffffff;
+        }
 
-nav ul {
-    display: flex;
-    gap: 100px;
-    list-style: none;
-    padding: 0;
-}
+        nav ul {
+            display: flex;
+            gap: 100px;
+            list-style: none;
+            padding: 0;
+        }
 
-nav a:hover {
-    color: rgb(0, 70, 27);
-    text-decoration: none;
-}
+        nav a:hover {
+            color: rgb(209, 222, 215);
+            text-decoration: none;
+        }
 
+        hr {
+            border: none;
+            border-top: 2px solid rgb(6, 0, 0);
+            width: 100%;
+            margin-top: 20px;
+        }
 
- 
-    
- 
+        nav a {
+            font-size: 26px;
+        }
 
-hr {
-    border: none;
-    border-top: 2px solid rgb(6, 0, 0);
-    width: 100%;
-    margin-top: 20px;
-}
+        
+        table {
+            border-collapse: collapse;   
+        }
 
-nav a {
-    font-size: 26px;
-}
+        th, td {
+            border: 1px solid black;     
+            padding: 8px;                
+        }
 
-</style>
+        th {
+            background-color: #e6e6e6;   
+        }
+    </style>
 
 </head>
 
@@ -56,5 +68,62 @@ nav a {
 
     <hr>
 
+    <h1>Como Escolher</h1>
+    <p>Clique em um item para ver as dicas.</p>
+
+   
+    <details>
+        <summary>Abacaxi</summary>
+        <ul>
+            <li>Cheiro doce na base da fruta.</li>
+            <li>Casca amarelada, principalmente perto da base.</li>
+            <li>As folhas do topo saem com facilidade.</li>
+            <li>Evite se estiver mole, com cheiro de fermentado ou manchas escuras.</li>
+        </ul>
+        <p><b>Guardar:</b> inteiro em temperatura ambiente; cortado, na geladeira em pote fechado.</p>
+    </details>
+
+    <details>
+        <summary>Banana</summary>
+        <ul>
+            <li>Amarela com pintinhas pretas: madura e doce.</li>
+            <li>Verde: ainda vai amadurecer em casa.</li>
+            <li>Evite as muito machucadas ou com a casca rachada.</li>
+        </ul>
+        <p><b>Guardar:</b> fora da geladeira, longe de outras frutas para não amadurecerem rápido.</p>
+    </details>
+
+    <details>
+        <summary>Tomate</summary>
+        <ul>
+            <li>Firme, mas cede um pouco ao apertar de leve.</li>
+            <li>Cor vermelha uniforme e brilhante.</li>
+            <li>Evite os com partes moles ou a casca enrugada.</li>
+        </ul>
+        <p><b>Guardar:</b> fora da geladeira até amadurecer; depois pode ir para a geladeira.</p>
+    </details>
+
+    <details>
+        <summary>Carne bovina</summary>
+        <ul>
+            <li>Cor vermelha viva, sem partes esverdeadas ou escuras.</li>
+            <li>Cheiro suave. Cheiro azedo é sinal de estragada.</li>
+            <li>Sem muito líquido na embalagem.</li>
+        </ul>
+        <p><b>Guardar:</b> geladeira por 2 a 3 dias, ou freezer por até 3 meses.</p>
+    </details>
+
+    <details>
+        <summary>Peixe</summary>
+        <ul>
+            <li>Olhos brilhantes e saltados.</li>
+            <li>Guelras vermelhas.</li>
+            <li>Cheiro de mar, não de peixe forte.</li>
+            <li>Carne firme, que volta ao apertar com o dedo.</li>
+        </ul>
+        <p><b>Guardar:</b> geladeira por 1 dia, ou freezer por até 3 meses.</p>
+    </details>
+
 </body>
+
 </html>

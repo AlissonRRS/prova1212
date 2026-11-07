@@ -1,39 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lista de Compras</title>
 
     <style>
+        body {
+            background-color: #ffffff;
+        }
 
-nav ul {
-    display: flex;
-    gap: 100px;
-    list-style: none;
-    padding: 0;
-}
+        nav ul {
+            display: flex;
+            gap: 100px;
+            list-style: none;
+            padding: 0;
+        }
 
-nav a:hover {
-    color: rgb(210, 216, 210);
-    text-decoration: none;
-}
+        nav a:hover {
+            color: rgb(209, 222, 215);
+            text-decoration: none;
+        }
 
+        hr {
+            border: none;
+            border-top: 2px solid rgb(6, 0, 0);
+            width: 100%;
+            margin-top: 20px;
+        }
 
- 
-    
- hr {
-    border: none;
-    border-top: 2px solid rgb(254, 255, 254);
-    width: 100%;
-    margin-top: 20px;
-}
+        nav a {
+            font-size: 26px;
+        }
 
-nav a {
-    font-size: 26px;
-}
+        
+        table {
+            border-collapse: collapse;   /
+        }
 
-</style>
+        th, td {
+            border: 1px solid black;     
+            padding: 8px;                
+        }
+
+        th {
+            background-color: #e6e6e6;   
+        }
+    </style>
 
 </head>
 
@@ -41,9 +55,6 @@ nav a {
 
     <nav>
         <ul>
-
-
-            
 
             <li><a href="1.estoque.html">Estoque</a></li>
             <li><a href="2.lista de compras.html">Lista de Compras</a></li>
@@ -57,86 +68,35 @@ nav a {
 
     <hr>
 
-    <h2>Produtos do estoque</h2>
+    <h1>Lista de Compras</h1>
+    <p>Itens que estão acabando, separados por categoria.</p>
 
+    <h2>Essenciais</h2>
+    <!-- <ul> = lista com bolinhas, <li> = cada item. A caixinha é um input do tipo checkbox. -->
+    <ul>
+        <li><label><input type="checkbox"> Leite (3 litros)</label></li>
+        <li><label><input type="checkbox"> Arroz (5 kg)</label></li>
+        <li><label><input type="checkbox"> Feijão (2 kg)</label></li>
+    </ul>
 
+    <h2>Frutas</h2>
+    <ul>
+        <li><label><input type="checkbox"> Banana (1 dúzia)</label></li>
+        <li><label><input type="checkbox"> Mamão (1 unidade)</label></li>
+    </ul>
 
-<p>
-    Arroz:
-    <input type="number" placeholder="Quantidade">
-    <input type="checkbox">
-</p>
+    <h2>Limpeza</h2>
+    <ul>
+        <li><label><input type="checkbox"> Detergente (3 unidades)</label></li>
+        <li><label><input type="checkbox"> Sabão em pó (1 caixa)</label></li>
+    </ul>
 
-<p>
-    Feijão:
-    <input type="number" placeholder="Quantidade">
-    <input type="checkbox">
-</p>
+    <h2>Adicionar item</h2>
+    <form>
+        <input type="text" placeholder="Ex: Tomate">
+        <button type="submit">Adicionar</button>
+    </form>
 
-<p>
-    Macarrão:
-    <input type="number" placeholder="Quantidade">
-    <input type="checkbox">
-</p>
-
-<p>
-    Açúcar:
-    <input type="number" placeholder="Quantidade">
-    <input type="checkbox">
-
-
-<p>
-    Sal:
-    <input type="number" placeholder="Quantidade">
-    <input type="checkbox">   
-    
-    
-<p>
-    Óleo:
-    <input type="number" placeholder="Quantidade">
-    <input type="checkbox">
-
- <p>
-    Café:
-    <input type="number" placeholder="Quantidade">
-    <input type="checkbox">
-    
-  
- <p>
-    Leite:
-    <input type="number" placeholder="Quantidade">
-    <input type="checkbox">
-    
- <p>
-    Pão:
-    <input type="number" placeholder="Quantidade">
-    <input type="checkbox">
-    
- <p>
-    Manteiga:
-    <input type="number" placeholder="Quantidade">
-    <input type="checkbox">
-
-
-<p>
-    Queijo:
-    <input type="number" placeholder="Quantidade">
-    <input type="checkbox">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</p>
 </body>
+
 </html>

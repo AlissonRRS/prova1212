@@ -1,41 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mercado</title>
 
     <style>
+        body {
+            background-color: #ffffff;
+        }
 
-nav ul {
-    display: flex;
-    gap: 100px;
-    list-style: none;
-    padding: 0;
-}
+        nav ul {
+            display: flex;
+            gap: 100px;
+            list-style: none;
+            padding: 0;
+        }
 
-nav a:hover {
-    color: rgb(0, 70, 27);
-    text-decoration: none;
-}
+        nav a:hover {
+            color: rgb(209, 222, 215);
+            text-decoration: none;
+        }
 
+        hr {
+            border: none;
+            border-top: 2px solid rgb(6, 0, 0);
+            width: 100%;
+            margin-top: 20px;
+        }
 
- 
-    
- 
+        nav a {
+            font-size: 26px;
+        }
 
-hr {
-    border: none;
-    border-top: 2px solid rgb(6, 0, 0);
-    width: 100%;
-    margin-top: 20px;
-}
+        /* ---- Novo: estilo simples para as tabelas ---- */
+        table {
+            border-collapse: collapse;   /* junta as bordas das células */
+        }
 
-nav a {
-    font-size: 26px;
-}
+        th, td {
+            border: 1px solid black;     /* borda preta em cada célula */
+            padding: 8px;                /* espaço dentro da célula */
+        }
 
-</style>
+        th {
+            background-color: #e6e6e6;   /* cinza claro no título da coluna */
+        }
+    </style>
 
 </head>
 
@@ -56,5 +68,41 @@ nav a {
 
     <hr>
 
+    <h1>Mercados</h1>
+    <p>Mercados perto de você (são exemplos, troque pelos seus):</p>
+
+    <table>
+        <tr>
+            <th>Mercado</th>
+            <th>Distância</th>
+            <th>Horário</th>
+            <th>Ponto forte</th>
+        </tr>
+        <tr>
+            <td>Mercado do Bairro</td>
+            <td>500 m</td>
+            <td>7h às 21h</td>
+            <td>Frutas e verduras frescas</td>
+        </tr>
+        <tr>
+            <td>Atacadão</td>
+            <td>3 km</td>
+            <td>8h às 22h</td>
+            <td>Preço bom em quantidade</td>
+        </tr>
+        <tr>
+            <td>Feira livre</td>
+            <td>1 km</td>
+            <td>Sábado, 6h às 12h</td>
+            <td>Frutas e verduras baratas</td>
+        </tr>
+    </table>
+
+    <br>
+
+    
+    <a href="https://www.google.com/maps/search/mercados/@-7.174117,-34.8748249,16z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MTEwMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">Ver mercados no mapa</a>
+
 </body>
+
 </html>

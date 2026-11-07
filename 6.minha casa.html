@@ -1,41 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Minha Casa</title>
 
     <style>
+        body {
+            background-color: #ffffff;
+        }
 
-nav ul {
-    display: flex;
-    gap: 100px;
-    list-style: none;
-    padding: 0;
-}
+        nav ul {
+            display: flex;
+            gap: 100px;
+            list-style: none;
+            padding: 0;
+        }
 
-nav a:hover {
-    color: rgb(0, 70, 27);
-    text-decoration: none;
-}
+        nav a:hover {
+            color: rgb(209, 222, 215);
+            text-decoration: none;
+        }
 
+        hr {
+            border: none;
+            border-top: 2px solid rgb(6, 0, 0);
+            width: 100%;
+            margin-top: 20px;
+        }
 
- 
-    
- 
+        nav a {
+            font-size: 26px;
+        }
 
-hr {
-    border: none;
-    border-top: 2px solid rgb(6, 0, 0);
-    width: 100%;
-    margin-top: 20px;
-}
+       
+        table {
+            border-collapse: collapse;   
+        }
 
-nav a {
-    font-size: 26px;
-}
+        th, td {
+            border: 1px solid black;     
+            padding: 8px;                
+        }
 
-</style>
+        th {
+            background-color: #e6e6e6;   
+        }
+    </style>
 
 </head>
 
@@ -56,5 +68,36 @@ nav a {
 
     <hr>
 
+    <h1>Minha Casa</h1>
+    <p>Essas informações ajudam a estimar quanto você consome.</p>
+
+    <form>
+        <label>Quantas pessoas moram na casa?
+            <input type="number" min="1" value="1">
+        </label>
+        <br><br>
+
+        <label>Cidade ou região: <input type="text"></label>
+        <br><br>
+
+        <label>Com que frequência você vai ao mercado?
+            <select>
+                <option>Toda semana</option>
+                <option>A cada 15 dias</option>
+                <option>Uma vez por mês</option>
+            </select>
+        </label>
+        <br><br>
+
+        <p>Você tem em casa:</p>
+        <label><input type="checkbox"> Crianças</label><br>
+        <label><input type="checkbox"> Pets</label><br>
+        <label><input type="checkbox"> Alguém com dieta especial</label>
+        <br><br>
+
+        <button type="submit">Salvar</button>
+    </form>
+
 </body>
+
 </html>
