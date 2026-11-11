@@ -1,8 +1,29 @@
 #include <stdio.h>
 
+/* Le um numero inteiro do teclado.
+   Retorna -1 se o usuario digitar algo que nao e numero
+   e 0 se o teclado for fechado (fim da entrada). */
+int ler_inteiro() {
+    int valor;
+    int c;
+
+    if (scanf("%d", &valor) == 1) {
+        return valor;
+    }
+
+    if (feof(stdin)) {
+        return 0;
+    }
+
+    /* limpa o que foi digitado de errado */
+    while ((c = getchar()) != '\n' && c != EOF) {
+    }
+    return -1;
+}
+
 /* Parte 1: mostra o estoque (Ok / Acabando) */
 void mostrar_estoque() {
-    char *nomes[4] = {"Arroz", "Leite", "Banana", "Sabao em po"};
+    const char *nomes[4] = {"Arroz", "Leite", "Banana", "Sabao em po"};
     int dias_restantes[4] = {20, 4, 3, 30};
     int i;
 
@@ -20,11 +41,11 @@ void mostrar_estoque() {
 /* Parte 2: gera o cores.css com o tema escolhido */
 void escolher_tema() {
     int opcao;
-    char *fundo, *texto, *cabecalho, *borda;
+    const char *fundo, *texto, *cabecalho, *borda;
     FILE *arquivo;
 
     printf("\n1 - Claro\n2 - Escuro\n3 - Verde\nOpcao: ");
-    scanf("%d", &opcao);
+    opcao = ler_inteiro();
 
     if (opcao == 2) {
         fundo = "#1e1e1e"; texto = "#f0f0f0"; cabecalho = "#444444"; borda = "#888888";
@@ -58,12 +79,14 @@ int main() {
         printf("2 - Escolher tema de cores\n");
         printf("0 - Sair\n");
         printf("Escolha: ");
-        scanf("%d", &opcao);
+        opcao = ler_inteiro();
 
         if (opcao == 1) {
             mostrar_estoque();
         } else if (opcao == 2) {
             escolher_tema();
+        } else if (opcao != 0) {
+            printf("Opcao invalida.\n");
         }
     } while (opcao != 0);
 
