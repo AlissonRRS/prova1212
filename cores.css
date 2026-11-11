@@ -1,0 +1,50 @@
+/* ===== Cores do site =====
+   Para trocar de tema, deixe só UM bloco :root sem comentário.
+   Depois atualize o navegador (F5). */
+
+/* Tema 1 - Claro (ativo) */
+:root {
+    --fundo: #ffffff;
+    --texto: #000000;
+    --cabecalho: #e6e6e6;
+    --borda: #000000;
+}
+
+/* Tema 2 - Escuro
+:root {
+    --fundo: #1e1e1e;
+    --texto: #f0f0f0;
+    --cabecalho: #444444;
+    --borda: #888888;
+}
+*/
+
+/* Tema 3 - Verde
+:root {
+    --fundo: #e8f5e9;
+    --texto: #1b5e20;
+    --cabecalho: #a5d6a7;
+    --borda: #2e7d32;
+}
+*/
+
+body {
+    background-color: var(--fundo);
+    color: var(--texto);
+}
+
+a {
+    color: var(--texto);
+}
+
+th {
+    background-color: var(--cabecalho);
+}
+
+th, td {
+    border: 1px solid var(--borda);
+}
+
+hr {
+    border-top-color: var(--borda);
+}
